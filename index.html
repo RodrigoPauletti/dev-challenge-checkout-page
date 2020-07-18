@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Checkout Page</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.min.css">
+</head>
+
+<body>
+  <div id="content">
+    <div class="container">
+      <div class="container-left">
+
+        <h1>Checkout</h1>
+        <div class="checkout-block">
+          <h4>Contact information</h4>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <div class="input-item">
+              <span class="material-icons">email</span>
+              <input id="email" type="email" placeholder="Enter your email..." />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <div class="input-item">
+              <span class="material-icons">local_phone</span>
+              <input id="phone" type="text" placeholder="Enter your phone..." />
+            </div>
+          </div>
+
+        </div>
+        <div class="checkout-block">
+          <h4>Shipping address</h4>
+
+          <div class="form-group">
+            <label for="fullname">Full name</label>
+            <div class="input-item">
+              <span class="material-icons">account_circle</span>
+              <input id="fullname" type="text" placeholder="Enter your full name..." value="Rodney Cotton" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <div class="input-item">
+              <span class="material-icons">home</span>
+              <input id="address" type="text" placeholder="Your address..." />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="city">City</label>
+            <div class="input-item">
+              <span class="material-icons">location_city</span>
+              <input id="city" type="text" placeholder="Your city..." />
+            </div>
+          </div>
+
+          <div class="form-group-multiple">
+            <div class="form-group form-group-half">
+              <label for="country">Country</label>
+              <div class="input-item">
+                <span class="material-icons">public</span>
+                <select id="country">
+                  <option hidden selected>Your country...</option>
+                  <option>Brazil</option>
+                  <option>United States</option>
+                  <option>Germany</option>
+                </select>
+                <span class="select-arrow material-icons">keyboard_arrow_down</span>
+              </div>
+            </div>
+
+            <div class="form-group form-group-half">
+              <label for="postal-code">Postal code</label>
+              <div class="input-item">
+                <span class="material-icons">markunread_mailbox</span>
+                <input id="postal-code" type="text" placeholder="Your postal code..." />
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="checkbox-container">
+          <input id="save-information" type="checkbox" />
+          <label for="save-information">Save this information for next time</label>
+        </div>
+
+        <button type="submit">Continue</button>
+      </div>
+
+      <div class="container-right">
+        <div class="products-list">
+          <div class="product-item">
+            <img src="./assets/images/product-01.png" />
+            <div class="product-detail">
+              <p class="product-name">Vintage Backbag</p>
+              <div class="product-price">
+                <p class="product-price-new">$54.99</p>
+                <p class="product-price-old">$94.99</p>
+              </div>
+              <div class="product-qty">
+                <div class="decrease-qty">
+                  <span class="material-icons">remove</span>
+                </div>
+                <input type="number" value="1" />
+                <div class="increase-qty">
+                  <span class="material-icons">add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="./assets/images/product-02.png" />
+            <div class="product-detail">
+              <p class="product-name">Levi Shoes</p>
+              <div class="product-price">
+                <p class="product-price-new">$74.99</p>
+                <p class="product-price-old">$124.99</p>
+              </div>
+              <div class="product-qty">
+                <div class="decrease-qty">
+                  <span class="material-icons">remove</span>
+                </div>
+                <input type="number" value="1" />
+                <div class="increase-qty">
+                  <span class="material-icons">add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-price">
+          <div id="shipping-price-detail">
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
+          <div id="total-price-detail">
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <p id="copyright">Rodrigo Developer @ DevChallenges.io</p>
+</body>
+
+</html>
